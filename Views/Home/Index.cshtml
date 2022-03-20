@@ -2,7 +2,16 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+<div class="password-wrapper">
+    <input id="passvalue" type="text" class="input" name="password">
+    <div class="icon-wrapper">
+        <span onclick="getpass()" toggle="#passvalue" class="ion ion-eye field-icon toggle-password"></span>
+    </div>
+
+    <div class="strength-lines">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
 </div>

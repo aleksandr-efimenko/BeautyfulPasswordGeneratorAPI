@@ -13,9 +13,8 @@ public class PassGenController : Controller
         _logger = logger;
     }
     [HttpGet]
-    public async Task<IActionResult> GetPassword()
+    public async Task<IActionResult> GetPassword(int len = 16)
     {
-        int len = 16;
         bool useUppercase = true;
         bool useDigits = false;
         string pass = generatePass(len, useUppercase, useDigits);
